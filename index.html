@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        max-width: 1240px;
+        margin: 0 auto;
+        background-color: #f5f8ff;
+    }
+    section{
+        padding-top: 90px;
+        margin: 0px;
+        
+    }
+    .color{
+        color: rgb(233,90,8);
+    }
+    .txt-clr{
+        color: rgb(122,124,127);
+    }
+    .img-w{
+        width: 100%;
+    }
+    .our-plant-paragrph-w{
+        max-width: 700px;
+    }
+    .font1{
+        font-size: 1.1em;
+    }
+    .p-3{
+        padding-bottom: 20px;
+    }
+    
+
+
+
+
+
+/* nav........................................... */
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-menu{
+        display: flex;
+        gap: 36px;
+        font-size: 1.3em;
+        .transparent{
+            color: rgb(109, 110, 111);
+        }
+    }
+    .nav-respovsive{
+        display: none;
+    }
+
+
+    /* baner............................... */
+
+    .baner-section{
+        display: flex;
+        gap: 110px;
+    }
+
+    .baner-left{
+        margin-top: 60px; 
+
+        .mini-bold{
+            font-size: 1.3em;
+            padding-top: 0px;
+            /* margin-top: 0px; */
+        }
+
+        .bold{
+            font-size: 3.5em;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        
+    }
+
+
+    /* our plant.................... */
+
+    .bold{
+            font-size: 3.5em;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+    .mini-bold{
+            font-size: 1.3em;
+            padding-top: 0px;
+            /* margin-top: 0px; */
+        }
+    
+    .our-plant{
+        text-align: center;
+    }
+
+
+
+
+    /* cards..................... */
+
+    .card-section{
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 13px;
+    }
+
+    .card{
+        /* width: 20rem; */
+        text-align: center;
+
+        .btn{
+            color: white;
+            background-color: rgb(233,90,8);
+            border: none;
+            padding: 18px 87px;
+            
+        }
+    }
+
+
+
+
+    /* badge.......................... */
+    .badge-section{
+        display: flex;
+    }
+    .badge-written{
+            padding-left: 100px;
+            width: 70%;
+            height: 10px;
+        }
+    .badge-img{
+        width: 18%;
+        margin-bottom: -235px;
+        margin-left: 420px; 
+        position: relative;
+    }
+
+
+    /* leatest deal...................... */
+
+    .sec-leatest{
+            text-align: center;
+        }
+
+
+
+
+    /* photo-3................................... */
+    .top-on-img {
+      position: absolute;
+       top: 50%; 
+       left: 50%; 
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 1.3em;
+    }
+    .all-3-photos{        
+        position: relative; 
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
+        
+    }
+    .photos-collauge{
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+    #photo{
+        border-radius: 11px;
+        filter: brightness(60%);
+    }
+
+
+
+
+    /* ................|||mediaquearyy|||............ */
+    /* ................|||mediaquearyy|||............ */
+    /* ................|||mediaquearyy|||............ */
+    /* ................|||mediaquearyy|||............ */
+    @media screen and (max-width:590px) {
+        body{
+            padding: 14px;
+        }
+        img{
+            width: 100%;
+        }
+
+
+        /* navv....................... */
+        .nav-respovsive{
+            display: block;
+        }
+
+        .nav-menu{
+            display: none;
+        }
+
+        .mod-res{
+            font-size: 1.3em;
+        }
+
+
+        /* baner........................... */
+        .baner-section{
+            flex-direction: column-reverse;
+            gap: 0px;
+        }
+         .baner-left{
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        .baner-right{
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+
+        /* our plant........... */
+        .mini-bold{
+            br{
+                display: none;
+            }
+        }
+
+
+        /* cards.................. */
+        .card-section{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        /* badge ......................... */
+        .badge-section{
+            flex-direction: column;
+        }
+        .badge-written{
+            padding: 0px;
+            width: auto;
+        }
+        .badge-img{
+            display: none;
+        }
+
+
+        /* leatest deal............... */
+        .sec-leatest{
+            margin-top: 500px;
+        }
+        .photos-collauge{
+            flex-direction: column;
+        }
+        #photo{
+            width: 450px;
+        }
+        
+    }
+
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="logo.png" alt="">
+            </div>
+
+            <div class="nav-menu">
+                <p>Home</p>
+                <p> <span class="transparent">Shop</span></p>
+                <p> <span class="transparent">About Us</span></p>
+                <p>$Cart ($56)</p>
+            </div>
+
+            <div class="nav-respovsive">
+                <p class="mod-res">$Cart ($56)</p>
+            </div>
+        </nav>
+
+        <!-- banner..................................... -->
+        <section>
+            <div class="baner-section">
+                <div class="baner-left">
+                    <p class="bold">ALWAYS <span class="color">FRESH FLOWERS</span></p>
+                    <p class="mini-bold txt-clr">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+                </div>
+
+                <div class="baner-right">
+                    <img src="hero-flower.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+
+    <section class="our-plant">
+        <p class="bold"> <span class="color">Our</span> Plants</p>
+        <p class="mini-bold txt-clr ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    </section>
+
+
+
+    <section class="card-section">
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="sample-flower-image.png" alt="">
+            <p class="font1">Lily Blossom</p>
+            <p class="font1">20 USD</p>
+            <button class="btn">ADD TO CART</button>
+        </div>
+    </section>
+
+
+
+    <img class="badge-img" src="trusted-badge.png" alt="">
+    <section class="badge-section">
+        <div class="bdg-img">
+            <img src="flower-store.png" alt="">
+            
+        </div>
+        <div class="badge-written mini-bold ">
+            <p class="bold "> Flower & Plants Lover </p>
+            <ul class="txt-clr">
+                <li class="p-">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li class="p-">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li class="p-">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            </ul>
+        </div>
+        
+    </section>
+
+
+    <section class="sec-leatest">
+         <p class="bold"> <span class="color">Latest</span> Plants</p>
+        <p class="mini-bold txt-clr ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    </section>
+
+
+
+    <section class="photos-collauge">
+        <div>
+            <div class="all-3-photos">
+                <img id="photo" src="deal-ana.png" alt="">
+                <p class="top-on-img"> 60% Off | Bloom Plant <br> Shop Now </p>
+            </div>
+            <div class="all-3-photos">
+                <img id="photo" src="deal-bloom.png" alt="">
+                <p class="top-on-img"> 30% Off | Ana  Plant <br> Shop Now </p>
+            </div>
+        </div>
+        <div class="all-3-photos">
+            <img id="photo" src="deal-zabo.png" alt="">
+            <p class="top-on-img"> 25% Off | Zabo Plant <br> Shop Now </p>
+        </div>
+    </section>
+
+    <section class="section-joint">
+        
+    </section>
+    
+
+</body>
+</html>
