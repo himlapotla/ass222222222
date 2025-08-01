@@ -7,7 +7,9 @@
 </head>
 
 <style>
-
+    .p-1{
+        width: 7%;
+    }
     body {
         /* max-width: 1240px; */
         margin: 0 auto; 
@@ -232,6 +234,18 @@
     }
 
 
+    /* footer........................... */
+    .section-footer{
+        display: grid;
+        grid-template-columns: 30% 20% 20% 30%;
+        gap: 6%;
+        font-size: 1.2em;
+    }
+    .f-4 img{
+        padding: 10px;       
+    }
+
+
 
 
     /* ................|||mediaquearyy|||............ */
@@ -351,7 +365,22 @@
                 margin-bottom: 3px;
             }
         }
-        
+
+
+        /* footer...................... */
+        .section-footer{
+            grid-template-columns: repeat(1,1fr);
+            gap: 0%;
+        }
+        .section-footer img{
+            width: 10%;
+        }
+        .f-4{
+            width: 60%;
+        }
+        .f-1 img{
+            width: 50%;
+        }
         
         
     }
@@ -373,6 +402,8 @@
                 <p> <span class="transparent">Shop</span></p>
                 <p> <span class="transparent">About Us</span></p>
                 <p>$Cart ($56)</p>
+               
+                
             </div>
 
             <div class="nav-respovsive">
@@ -534,11 +565,36 @@
 
 
     <div class="container">
-        <section class="section-footer">
-           
+        <section class="section-footer txt-clr">
+           <div class="f-1">
+                <img class="foot-logo" src="logo.png" alt="">
+                <p>
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. 
+                </p>
+           </div>
+           <div class="f-2">
+                <p>Home</p> 
+                <p>About Us</p>
+                <p>Blog</p>
+                <p>FAQ</p>
+                <p>Contact Us</p>
+           </div>
+           <div class="f-3">
+                <p> Features</p>
+                <p>Pricing</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+                <p>Help Center</p>
+           </div>
+           <div class="f-4">
+                <img src="icon-linkedin.png" alt="">
+                <img src="icon-twitter.png" alt="">
+                <img src="icon-facebook.png" alt="">
+                <img src="icon-youtube.png" alt="">
+           </div>
         </section>
     </div>
-
+     
 
 
 </body>
