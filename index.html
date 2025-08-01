@@ -8,10 +8,14 @@
 
 <style>
 
-    body{
+    body {
+        /* max-width: 1240px; */
+        margin: 0 auto; 
+        background-color: #f5f8ff;
+    }
+    .container{
         max-width: 1240px;
         margin: 0 auto;
-        background-color: #f5f8ff;
     }
     section{
         padding-top: 90px;
@@ -35,6 +39,9 @@
     }
     .p-3{
         padding-bottom: 20px;
+    }
+    .d-f{
+        display: flex;
     }
     
 
@@ -160,14 +167,15 @@
 
     /* photo-3................................... */
     .top-on-img {
+        /* top-on-img is the written part */
       position: absolute;
-       top: 50%; 
-       left: 50%; 
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       font-size: 1.3em;
     }
-    .all-3-photos{        
+    .all-3-photos{
         position: relative; 
         width: 100%;
         text-align: center;
@@ -187,11 +195,51 @@
 
 
 
+    /*joint section...........................  */
+
+    .section-joint{
+        position: relative;
+        text-align: center;
+    }
+    .img-news{
+        width: 100%;
+        /* display: block; */
+    }
+    .joint-written-part{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3.3em;
+
+    }
+    .joint-written-part input {
+        padding: 2% 20%;
+        border: none;
+        font-size: large;
+    }
+
+    .joint-written-part button {
+        /* padding: 10px 60px; */
+        padding: 1% 10%;
+        background-color: #e95a08;
+        border: none;
+    }
+    .j{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+
+
+
+
     /* ................|||mediaquearyy|||............ */
     /* ................|||mediaquearyy|||............ */
     /* ................|||mediaquearyy|||............ */
     /* ................|||mediaquearyy|||............ */
-    @media screen and (max-width:590px) {
+    @media screen and (max-width:576px) {
         body{
             padding: 14px;
         }
@@ -268,12 +316,21 @@
         #photo{
             width: 450px;
         }
+
+
+        /* joint ......................... */
+        .img-news{
+            width: 100%;
+        }
         
     }
 
 
 </style>
 <body>
+
+    <div class="container">
+
     <header>
         <nav class="navbar">
             <div class="nav-logo">
@@ -309,6 +366,9 @@
     </header>
 
 
+    
+
+    
 
     <section class="our-plant">
         <p class="bold"> <span class="color">Our</span> Plants</p>
@@ -318,6 +378,7 @@
 
 
     <section class="card-section">
+        
         <div class="card">
             <img src="sample-flower-image.png" alt="">
             <p class="font1">Lily Blossom</p>
@@ -419,10 +480,33 @@
         </div>
     </section>
 
+    </div>
+
+
+   
     <section class="section-joint">
+        <img class="img-news" src="news-letter-bg.png" alt="">
+
+        <div class="joint-written-part">
+            <p class="j"> Join the colorful Bunch </p>
+            <div class="d-f">
+                <input class="j" placeholder="Write email" type="text"> <button class="j">Subscribe</button>
+            </div>
+
+        </div>
         
     </section>
-    
+
+
+
+
+    <div class="container">
+        <section class="section-footer">
+           
+        </section>
+    </div>
+
+
 
 </body>
 </html>
